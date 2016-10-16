@@ -46,7 +46,7 @@
   </thead>
 
   <tbody>
-    <% @products.order('price').where('name like ?','%TV%').each do |product| %>
+    <% @products.where('name like ?','%TV%').order('price').each do |product| %>
      <tr>
       <td><%= product.name %></td>
       <td><%= product.description %></td>
