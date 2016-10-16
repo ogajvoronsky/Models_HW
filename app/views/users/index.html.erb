@@ -13,7 +13,7 @@
 
   <tbody>
 
-    <% @users.each do |user| %>
+    <% @users.order('age').each do |user| %>
       <tr>
         <td><%= user.name %></td>
         <td><%= user.age %></td>
